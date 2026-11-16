@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Garlands | Sankari Malaragam</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+    <meta name="description" content="Explore beautiful handcrafted marriage garlands by Sankari Malaragam, specially designed for traditional South Indian weddings.">
+    <meta name="keywords" content="Marriage Garlands, Wedding Garlands, South Indian Wedding Flowers, Sankari Malaragam">
+    <meta name="author" content="Sankari Malaragam">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER START -->
+<header>
+    <div class="logo">
+        <a href="index.html">🌸 Sankari Malaragam</a>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="index.html#collections" data-i18n="nav_collections">Collections</a></li>
+            <li><a href="index.html#gallery" data-i18n="nav_gallery">Gallery</a></li>
+            <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+            <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+            <li>
+                <a href="wishlist.html" class="nav-badge-link">
+                    <i class="fa-solid fa-heart"></i> <span data-i18n="nav_wishlist">Wishlist</span>
+                    <span class="nav-badge wishlist-count-badge" style="display:none;">0</span>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html" class="nav-badge-link">
+                    <i class="fa-solid fa-cart-shopping"></i> <span data-i18n="nav_cart">Cart</span>
+                    <span class="nav-badge cart-count-badge" style="display:none;">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header-actions-right">
+        <!-- Language Switcher (தமிழ் / English) -->
+        <button type="button" class="lang-toggle-btn" id="langToggleBtn" onclick="toggleLanguage()" title="Switch Language">
+            <i class="fa-solid fa-language"></i> தமிழ்
+        </button>
+
+        <!-- Voice Search Button -->
+        <button type="button" class="voice-search-btn" id="voiceSearchBtn" onclick="startVoiceSearch()" title="பேசி தேடலாம் / Voice Search">
+            <i class="fa-solid fa-microphone"></i> <span id="voiceBtnText">பேசி தேடலாம்</span>
+        </button>
+
+        <!-- WhatsApp Order Button -->
+        <a href="https://wa.me/919159959156?text=Hello%20Sivan%20sir%2C%20I%20am%20interested%20in%20ordering%20Marriage%20Garlands."
+           class="btn header-order-btn"
+           target="_blank">
+           <i class="fa-brands fa-whatsapp"></i> <span data-i18n="nav_order_now">Order Now</span>
+        </a>
+
+        <!-- Mobile Nav Toggle Hamburger -->
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+<!-- HEADER END -->
+
+<section class="category-banner">
+    <h1>Marriage Garlands</h1>
+    <p>Beautifully handcrafted South Indian wedding garlands for your sacred muhurtham.</p>
+</section>
+
+<!-- PRODUCTS GRID -->
+<section class="category-product-section">
+    <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="img-wrapper">
+                <img src="images/marriage1.jpg" alt="Marriage Garland 1 - Pink Lotus & Baby's Breath" onclick="openImage(this.src, 'Marriage Garland 1 - Pink Lotus', 2800, 'Marriage Garlands')">
+                <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> View</span>
+            </div>
+            <h3>Marriage Garland 1</h3>
+            <p class="product-desc">Sacred Pink Lotus Petals & White Baby's Breath Wedding Malai</p>
+            <div class="product-price">
+                <span class="price-val">₹2,800</span>
+                <span class="price-type">Approx. / Pair</span>
+            </div>
+            <div class="card-btn-group">
+                <button class="btn-add-cart" onclick="addToCart('Marriage Garland 1', 'images/marriage1.jpg', 2800, 'Marriage Garlands')">
+                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+                <button class="btn-add-wishlist" onclick="addToWishlist('Marriage Garland 1', 'images/marriage1.jpg', 2800)" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="img-wrapper">
+                <img src="images/marriage2.jpg" alt="Marriage Garland 2 - Royal Red Rose & Gold" onclick="openImage(this.src, 'Marriage Garland 2 - Royal Red Rose', 2500, 'Marriage Garlands')">
+                <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> View</span>
+            </div>
+            <h3>Marriage Garland 2</h3>
+            <p class="product-desc">Crimson Red Rose & Elegant Golden Lace Wedding Garland</p>
+            <div class="product-price">
+                <span class="price-val">₹2,500</span>
+                <span class="price-type">Approx. / Pair</span>
+            </div>
+            <div class="card-btn-group">
+                <button class="btn-add-cart" onclick="addToCart('Marriage Garland 2', 'images/marriage2.jpg', 2500, 'Marriage Garlands')">
+                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+                <button class="btn-add-wishlist" onclick="addToWishlist('Marriage Garland 2', 'images/marriage2.jpg', 2500)" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="img-wrapper">
+                <img src="images/marriage3.jpg" alt="Marriage Garland 3 - Jasmine & Lotus" onclick="openImage(this.src, 'Marriage Garland 3 - Jasmine & Lotus', 2600, 'Marriage Garlands')">
+                <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> View</span>
+            </div>
+            <h3>Marriage Garland 3</h3>
+            <p class="product-desc">Pure Madurai Jasmine (Malli) & Pink Lotus Sacred Garland</p>
+            <div class="product-price">
+                <span class="price-val">₹2,600</span>
+                <span class="price-type">Approx. / Pair</span>
+            </div>
+            <div class="card-btn-group">
+                <button class="btn-add-cart" onclick="addToCart('Marriage Garland 3', 'images/marriage3.jpg', 2600, 'Marriage Garlands')">
+                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+                <button class="btn-add-wishlist" onclick="addToWishlist('Marriage Garland 3', 'images/marriage3.jpg', 2600)" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="img-wrapper">
+                <img src="images/marriage4.jpg" alt="Marriage Garland 4 - Crimson Petal & Lotus" onclick="openImage(this.src, 'Marriage Garland 4 - Crimson Petal Weave', 3000, 'Marriage Garlands')">
+                <span class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> View</span>
+            </div>
+            <h3>Marriage Garland 4</h3>
+            <p class="product-desc">Grand Crimson Rose Petal Weave & Lotus Bud Wedding Malai</p>
+            <div class="product-price">
+                <span class="price-val">₹3,000</span>
+                <span class="price-type">Approx. / Pair</span>
+            </div>
+            <div class="card-btn-group">
+                <button class="btn-add-cart" onclick="addToCart('Marriage Garland 4', 'images/marriage4.jpg', 3000, 'Marriage Garlands')">
+                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+                <button class="btn-add-wishlist" onclick="addToWishlist('Marriage Garland 4', 'images/marriage4.jpg', 3000)" title="Add to Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Category Order Box -->
+<div class="category-order-box">
+    <p>Looking for a custom length or specific flower combination for your wedding?</p>
+    <a href="https://wa.me/919159959156?text=Hello%20Sivan%20sir%2C%20I%20am%20interested%20in%20custom%20Marriage%20Garlands."
+       target="_blank" class="btn-category-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Order Marriage Garlands on WhatsApp
+    </a>
+</div>
+
+<div class="back-home">
+    <a href="index.html#collections">← Back to All Collections</a>
+</div>
+
+<!-- Image Lightbox Popup with Instant Order -->
+<div class="image-popup" id="imagePopup">
+    <div class="popup-content-box">
+        <span class="popup-close-btn" onclick="closeImage()">&times;</span>
+        <div class="popup-img-wrapper">
+            <img id="popupImage" src="" alt="Garland Preview">
+        </div>
+        <div class="popup-info">
+            <h3 id="popupTitle">Marriage Garland</h3>
+            <span class="popup-category" id="popupCategory">Marriage Collection</span>
+            <div class="popup-price" id="popupPrice">Approx. ₹2,500</div>
+            <div class="popup-actions">
+                <a id="popupWaBtn" href="#" target="_blank" class="popup-btn-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                </a>
+                <button id="popupCartBtn" class="popup-btn-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919159959156?text=Hi%20Sivan%20sir%2C%20I%20have%20a%20question%20about%20Marriage%20Garlands."
+   class="whatsapp-float"
+   target="_blank"
+   title="Chat with Sankari Malaragam on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- FOOTER START -->
+<footer class="footer">
+    <h2>🌸 Sankari Malaragam</h2>
+    <p>Beautiful Wedding Garlands for Your Special Moments | <strong>Proprietor: S. Sivan</strong></p>
+
+    <div class="footer-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#collections">Collections</a>
+        <a href="marriage.html">Marriage</a>
+        <a href="reception.html">Reception</a>
+        <a href="temple.html">Temple</a>
+        <a href="custom.html">Custom</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 Sankari Malaragam. Prop. S. Sivan. All Rights Reserved.
+    </p>
+</footer>
+<!-- FOOTER END -->
+
+<script src="script.js"></script>
+</body>
+</html>
