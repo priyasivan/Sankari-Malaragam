@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankari Malaragam | Wedding & Marriage Garlands</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+    <meta name="description" content="Sankari Malaragam offers beautiful handcrafted marriage garlands, reception garlands, temple garlands and custom floral designs for your special occasions.">
+    <meta name="keywords" content="Sankari Malaragam, Wedding Garlands, Marriage Garlands, Reception Garlands, Temple Garlands, Custom Garlands, Tamil Nadu Flower Malai">
+    <meta name="author" content="Sankari Malaragam">
+    <meta property="og:title" content="Sankari Malaragam | Wedding Garlands">
+    <meta property="og:description" content="Beautiful handcrafted wedding, reception and temple garlands for your special occasions.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER START -->
+<header>
+    <div class="logo">
+        <a href="index.html">🌸 Sankari Malaragam</a>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#collections" data-i18n="nav_collections">Collections</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+            <li><a href="#reviews" data-i18n="nav_reviews">Reviews</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            <li>
+                <a href="wishlist.html" class="nav-badge-link">
+                    <i class="fa-solid fa-heart"></i> <span data-i18n="nav_wishlist">Wishlist</span>
+                    <span class="nav-badge wishlist-count-badge" style="display:none;">0</span>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html" class="nav-badge-link">
+                    <i class="fa-solid fa-cart-shopping"></i> <span data-i18n="nav_cart">Cart</span>
+                    <span class="nav-badge cart-count-badge" style="display:none;">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header-actions-right">
+        <!-- Language Switcher (தமிழ் / English) -->
+        <button type="button" class="lang-toggle-btn" id="langToggleBtn" onclick="toggleLanguage()" title="Switch Language">
+            <i class="fa-solid fa-language"></i> தமிழ்
+        </button>
+
+        <!-- Voice Search Button -->
+        <button type="button" class="voice-search-btn" id="voiceSearchBtn" onclick="startVoiceSearch()" title="பேசி தேடலாம் / Voice Search">
+            <i class="fa-solid fa-microphone"></i> <span id="voiceBtnText">பேசி தேடலாம்</span>
+        </button>
+
+        <!-- WhatsApp Order Button -->
+        <a href="https://wa.me/919159959156?text=Hello%20Sivan%20sir%2C%20I%20would%20like%20to%20place%20an%20order."
+           class="btn header-order-btn"
+           target="_blank">
+           <i class="fa-brands fa-whatsapp"></i> <span data-i18n="nav_order_now">Order Now</span>
+        </a>
+
+        <!-- Mobile Nav Toggle Hamburger -->
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+<!-- HEADER END -->
+
+<!-- HERO SECTION START -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h4 data-i18n="hero_welcome">Welcome to</h4>
+        <h1 data-i18n="hero_title">SANKARI MALARAGAM</h1>
+        <h3 data-i18n="hero_subtitle">Traditional & Trending Wedding Garlands</h3>
+        <p data-i18n="hero_desc">
+            We create breathtaking wedding and reception garlands using fresh, handpicked flowers with traditional craftsmanship and contemporary elegance.
+        </p>
+        <div class="hero-actions">
+            <a href="#collections" class="hero-btn">
+                <i class="fa-solid fa-basket-shopping"></i> <span data-i18n="hero_btn_explore">Explore Collections</span>
+            </a>
+            <a href="https://wa.me/919159959156?text=Hello%20Sivan%20sir%2C%20I%20would%20like%20to%20know%20about%20garland%20pricing."
+               class="hero-btn-outline" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="hero_btn_inquiry">WhatsApp Inquiry</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- HERO SECTION END -->
+
+<!-- WHY CHOOSE US START -->
+<section class="why-us">
+    <h2 data-i18n="why_title">Why Choose Sankari Malaragam?</h2>
+    <div class="features">
+        <div class="feature-box">
+            <i class="fa-solid fa-seedling"></i>
+            <h3 data-i18n="why_fresh">Fresh Flowers</h3>
+            <p data-i18n="why_fresh_desc">100% farm-fresh flowers handpicked each morning for long-lasting fragrance.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-solid fa-heart"></i>
+            <h3 data-i18n="why_hand">Handcrafted with Love</h3>
+            <p data-i18n="why_hand_desc">Traditional craftsmanship woven meticulously to make your wedding look divine.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-solid fa-truck"></i>
+            <h3 data-i18n="why_time">On-Time Muhurtham Delivery</h3>
+            <p data-i18n="why_time_desc">Guaranteed punctual delivery directly to your marriage hall or residence.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fa-solid fa-award"></i>
+            <h3 data-i18n="why_custom">Customizable Designs</h3>
+            <p data-i18n="why_custom_desc">Garland styles tailored to match the bride and groom’s attire colors.</p>
+        </div>
+    </div>
+</section>
+<!-- WHY CHOOSE US END -->
+
+<!-- COLLECTIONS START -->
+<section class="collections" id="collections">
+    <h2 data-i18n="col_title">Our Signature Collections</h2>
+    <p class="section-subtitle" data-i18n="col_subtitle">Click on any collection to view designs, approximate prices, and add to your cart</p>
+
+    <div class="collection-container">
+        <a href="marriage.html" class="card">
+            <div class="card-img-wrapper">
+                <img src="images/marriage.jpg" alt="Marriage Garlands">
+                <span class="card-badge">4 Designs</span>
+            </div>
+            <h3 data-i18n="col_marriage">Marriage Garlands</h3>
+            <p data-i18n="col_marriage_desc">Traditional wedding malai crafted with roses, lotus & fresh jasmine.</p>
+            <span class="card-link" data-i18n="col_view">View Collection →</span>
+        </a>
+
+        <a href="reception.html" class="card">
+            <div class="card-img-wrapper">
+                <img src="images/reception.jpg" alt="Reception Garlands">
+                <span class="card-badge">4 Designs</span>
+            </div>
+            <h3 data-i18n="col_reception">Reception Garlands</h3>
+            <p data-i18n="col_reception_desc">Lightweight pastel & orchid designs crafted for reception style.</p>
+            <span class="card-link" data-i18n="col_view">View Collection →</span>
+        </a>
+
+        <a href="temple.html" class="card">
+            <div class="card-img-wrapper">
+                <img src="images/temple.jpg" alt="Temple Garlands">
+                <span class="card-badge">4 Designs</span>
+            </div>
+            <h3 data-i18n="col_temple">Temple Garlands</h3>
+            <p data-i18n="col_temple_desc">Divine tulsi, sevvanthi, and jasmine garlands for auspicious poojas.</p>
+            <span class="card-link" data-i18n="col_view">View Collection →</span>
+        </a>
+
+        <a href="custom.html" class="card">
+            <div class="card-img-wrapper">
+                <img src="images/custom.jpg" alt="Custom Designs">
+                <span class="card-badge">4 Designs</span>
+            </div>
+            <h3 data-i18n="col_custom">Custom Designs</h3>
+            <p data-i18n="col_custom_desc">Special personalized garlands made to your exact color theme.</p>
+            <span class="card-link" data-i18n="col_view">View Collection →</span>
+        </a>
+    </div>
+</section>
+<!-- COLLECTIONS END -->
+
+<!-- GALLERY SECTION -->
+<section class="gallery" id="gallery">
+    <h2 data-i18n="gallery_title">Our Signature Creations & Gallery</h2>
+    <p class="section-subtitle" data-i18n="gallery_subtitle">Real wedding & temple garlands crafted by S. Sivan. Tap any garland to view details & order directly!</p>
+
+    <div class="gallery-container">
+        <div class="gallery-item" onclick="openImage('images/marriage1.jpg', 'Pink Lotus Wedding Garland', 2800, 'Marriage Collection')">
+            <img src="images/marriage1.jpg" alt="Pink Lotus Wedding Garland">
+            <span class="gallery-caption">Pink Lotus Wedding Garland • ₹2,800</span>
+        </div>
+        <div class="gallery-item" onclick="openImage('images/custom1.jpg', 'Designer Peacock Feather Garland', 3500, 'Custom Collection')">
+            <img src="images/custom1.jpg" alt="Designer Peacock Feather Garland">
+            <span class="gallery-caption">Peacock Feather Garland • ₹3,500</span>
+        </div>
+        <div class="gallery-item" onclick="openImage('images/reception3.jpg', 'Pastel Pink Rose Reception Garland', 2800, 'Reception Collection')">
+            <img src="images/reception3.jpg" alt="Pastel Pink Rose Reception Garland">
+            <span class="gallery-caption">Pastel Rose Reception Malai • ₹2,800</span>
+        </div>
+        <div class="gallery-item" onclick="openImage('images/temple1.jpg', 'Grand Deity Festival Malai', 1200, 'Temple Collection')">
+            <img src="images/temple1.jpg" alt="Grand Deity Festival Malai">
+            <span class="gallery-caption">Grand Deity Festival Malai • ₹1,200</span>
+        </div>
+    </div>
+</section>
+
+<!-- Image Lightbox Popup with Instant Order -->
+<div class="image-popup" id="imagePopup">
+    <div class="popup-content-box">
+        <span class="popup-close-btn" onclick="closeImage()">&times;</span>
+        <div class="popup-img-wrapper">
+            <img id="popupImage" src="" alt="Garland Preview">
+        </div>
+        <div class="popup-info">
+            <h3 id="popupTitle">Royal Marriage Garland</h3>
+            <span class="popup-category" id="popupCategory">Wedding Collection</span>
+            <div class="popup-price" id="popupPrice">Approx. ₹2,500</div>
+            <div class="popup-actions">
+                <a id="popupWaBtn" href="#" target="_blank" class="popup-btn-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Order this Design on WhatsApp
+                </a>
+                <button id="popupCartBtn" class="popup-btn-cart">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CUSTOMER REVIEWS SECTION -->
+<section class="reviews-section" id="reviews">
+    <h2 data-i18n="reviews_title">What Our Customers Say</h2>
+    <p class="section-subtitle" data-i18n="reviews_subtitle">Loved by brides, grooms, and families across Tamil Nadu ❤️</p>
+
+    <div class="reviews-grid">
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">
+                "The wedding garlands for our marriage were exceptionally fresh and fragrant! The rose petal work was so neat, and Sivan sir delivered it right on time to our mandapam. Highly recommended!"
+            </p>
+            <div class="reviewer">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-heart"></i>🌸</div>
+                <div class="reviewer-info">
+                    <h4>Priyadharshini & Karthik</h4>
+                    <span>Wedding Garland Client</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">
+                "Ordered reception pastel garlands matching my lehenga. Everybody in the hall was asking where we got the garlands from. Super lightweight and looked stunning in our photos!"
+            </p>
+            <div class="reviewer">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-heart"></i>🌺</div>
+                <div class="reviewer-info">
+                    <h4>Deepa & Rajesh</h4>
+                    <span>Reception Garland Client</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">
+                "Ordered special temple malas for our house warming pooja and deity alankaram. The Madurai Malli smell was divine throughout the whole day. Sankari Malaragam is our family's trusted flower shop."
+            </p>
+            <div class="reviewer">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-heart"></i>🌼</div>
+                <div class="reviewer-info">
+                    <h4>Suresh Kumar</h4>
+                    <span>Home Ceremony & Pooja Malai</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+    <h2 data-i18n="about_title">About Sankari Malaragam</h2>
+
+    <div class="about-container">
+        <div class="about-text">
+            <h3 data-i18n="about_h3">Creating Beautiful Memories with Fresh Flowers</h3>
+            <p data-i18n="about_p1">
+                Founded and masterfully managed by <strong>S. Sivan (Proprietor)</strong>, Sankari Malaragam specializes in handcrafted traditional and trending wedding, reception, and temple garlands. We believe a garland is not just flowers strung together—it is a sacred symbol of love, togetherness, and tradition for your once-in-a-lifetime occasion.
+            </p>
+            <p data-i18n="about_p2">
+                From classic Madurai Malli and fragrant red roses to trending orchid weave and pastel bridal garlands, Sivan sir and our dedicated artisans bring perfection, freshness, and devotion to every single knot.
+            </p>
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <strong>15+</strong>
+                    <span data-i18n="about_years">Years of Floral Heritage</span>
+                </div>
+                <div class="highlight-item">
+                    <strong>1000+</strong>
+                    <span data-i18n="about_weddings">Weddings Graced</span>
+                </div>
+                <div class="highlight-item">
+                    <strong>100%</strong>
+                    <span data-i18n="about_fresh_badge">Fresh Farm Flower Guarantee</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT & LOCATION SECTION -->
+<section class="contact" id="contact">
+    <h2 data-i18n="contact_title">Contact & Visit Us</h2>
+    <p data-i18n="contact_subtitle">Let us make your auspicious ceremonies more vibrant and memorable!</p>
+
+    <div class="contact-wrapper">
+        <div class="contact-container">
+            <h3>🌸 Sankari Malaragam</h3>
+            <p class="contact-sub" data-i18n="contact_prop">Proprietor: S. Sivan</p>
+
+            <div class="contact-details">
+                <p><i class="fa-solid fa-user-tie"></i> <strong data-i18n="contact_prop">Proprietor: S. Sivan</strong></p>
+                <p><i class="fa-solid fa-phone"></i> <strong data-i18n="contact_phone">Phone:</strong> <a href="tel:+919159959156">+91 91599 59156</a></p>
+                <p><i class="fa-brands fa-whatsapp"></i> <strong data-i18n="contact_wa">WhatsApp:</strong> <a href="https://wa.me/919159959156" target="_blank">+91 91599 59156</a></p>
+                <p><i class="fa-solid fa-location-dot"></i> <strong data-i18n="contact_addr_label">Address:</strong> <span data-i18n="contact_addr_val">Jeba Garden, Reddiyar Patti Road, N G O 'A' Colony, Tirunelveli, Tamil Nadu</span></p>
+                <p><i class="fa-brands fa-instagram"></i> <strong data-i18n="contact_insta">Instagram:</strong> <a href="https://instagram.com" target="_blank">@sankarimalaragam</a></p>
+            </div>
+
+            <div class="voice-order-tip">
+                <i class="fa-solid fa-microphone-lines"></i>
+                <p data-i18n="voice_helper_tip">🎙️ Prefer voice? You can also place orders by sending an audio note on WhatsApp!</p>
+            </div>
+
+            <div class="contact-btn-group">
+                <a href="https://wa.me/919159959156?text=Hi%20Sivan%20sir%2C%20I%20would%20like%20to%20order%20garlands%20from%20Sankari%20Malaragam."
+                   class="contact-btn"
+                   target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="contact_btn_wa">Chat on WhatsApp</span>
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Jeba+Garden+Reddiyar+Patti+road+NGO+A+Colony+Tirunelveli"
+                   class="maps-btn"
+                   target="_blank">
+                    <i class="fa-solid fa-map-location-dot"></i> <span data-i18n="contact_btn_maps">Open Google Maps</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Google Maps Embed for Jeba Garden, Reddiyar Patti road, NGO A Colony -->
+        <div class="map-container">
+            <iframe
+                title="Sankari Malaragam Location Map"
+                src="https://maps.google.com/maps?q=Jeba+Garden,+Reddiyar+Patti+road,+NGO+A+Colony,+Tirunelveli&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="340"
+                style="border:0; border-radius:15px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919159959156?text=Hi%20Sivan%20sir%2C%20I%20have%20an%20inquiry%20about%20garlands."
+   class="whatsapp-float"
+   target="_blank"
+   title="Chat with Sankari Malaragam on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+    <h2>🌸 Sankari Malaragam</h2>
+    <p data-i18n="footer_sub">Beautiful Wedding Garlands for Your Special Moments | Proprietor: S. Sivan</p>
+
+    <div class="footer-links">
+        <a href="#home" data-i18n="nav_home">Home</a>
+        <a href="#collections" data-i18n="nav_collections">Collections</a>
+        <a href="marriage.html" data-i18n="col_marriage">Marriage</a>
+        <a href="reception.html" data-i18n="col_reception">Reception</a>
+        <a href="temple.html" data-i18n="col_temple">Temple</a>
+        <a href="custom.html" data-i18n="col_custom">Custom</a>
+        <a href="wishlist.html" data-i18n="nav_wishlist">Wishlist</a>
+        <a href="cart.html" data-i18n="nav_cart">Cart</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+
+    <div class="footer-social">
+        <a href="https://wa.me/919159959156" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="tel:+919159959156" title="Call Us"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Jeba+Garden+Reddiyar+Patti+road+NGO+A+Colony+Tirunelveli" target="_blank" title="Google Maps"><i class="fa-solid fa-location-dot"></i></a>
+    </div>
+
+    <p class="copyright" data-i18n="footer_copy">
+        © 2026 Sankari Malaragam. Prop. S. Sivan. All Rights Reserved. Crafted with love for special occasions.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
